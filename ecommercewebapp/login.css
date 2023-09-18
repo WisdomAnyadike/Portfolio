@@ -1,0 +1,33 @@
+body {
+  background-color: orange;
+}
+
+  img{
+    text-align: center;
+    margin-bottom: 0px;
+   
+  }
+
+  p{
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  input{
+    border: 2px solid white;
+    border-radius: 4px ;
+    width: 200px;
+    height: 30px
+  
+  }
+
+  span  {
+    
+
+     font-size: 20px;
+     padding: 15px;
+     margin-bottom: 10px;
+  
+  }
+  a{text-decoration: none;
+  color: white ;}

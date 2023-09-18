@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Your Futuristic Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+           
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4ac1e2;
+            animation: fadeInUp 1s forwards;
+    opacity: 0;
+        }
+
+       
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeInUp 1s forwards;
+    opacity: 0;
+    margin-bottom: 70px;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 0;
+            animation: fadeInUp 1s forwards;
+             opacity: 0;
+        }
+
+        .project-box {
+            width: 250px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            animation: fadeInUp 1s forwards;
+    opacity: 0;
+        }
+
+        .project-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-box h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #4ac1e2;
+        }
+
+        .project-box p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .project-box .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: rgb(74, 73, 73);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-box .button:hover {
+            background-color: #0087b5;
+        }
+
+        footer {
+            background-color: rgb(74, 74, 74);
+            color: #fff;
+            text-align: center;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            opacity: 0; /* Initially invisible */
+    animation: fadeIn 1s forwards 1s; /* Fade in after a delay */
+
+        
+        }
+
+        .button{
+            margin-bottom: 15px;
+            color: #4ac1e2;
+        }
+
+        h3{
+            font-family:  'Arial Narrow Bold';
+        }
+
+        @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+       <a href="forme.html" style="text-decoration: none;" ><h1>Anyadike Wisdom</h1> </a>
+        <p> FullStack Developer</p>
+    </header>
+
+    <div class="project-container">
+        <div class="project-box">
+            <img src="Instagram-Dark-mode.webp" alt="Project 1">
+            <h3> Instagram.com </h3>
+            <p> Dark Mode Instagram Clone </p>
+            <a href="../portfolio/instagramclone/index.html" class="button">View Project</a>
+            <a href="https://github.com/WisdomAnyadike/portfolio/blob/master/instagramclone/assignment.html" class="button">View Code</a>
+        </div>
+        <div class="project-box">
+            <img src="download-2.jpg" alt="Project 2">
+            <h3> Rive.com </h3>
+            <p> E-commerce App Front Page </p>
+            <a href="../portfolio/ASSIGNMENT/class.html" class="button">View Project</a>
+            <a href="https://github.com/WisdomAnyadike/portfolio/blob/master/ecommercewebapp/index.html" class="button">View Code</a>
+        </div>
+        <div class="project-box">
+            <img src="download-1.jpg" alt="Project 3">
+            <h3> Worldcountries.net </h3>
+            <p>World Countries Web App </p>
+            <a href="../portfolio/countrieswebapp/worldcountries.html" class="button">View Project</a>
+            <a href="https://github.com/WisdomAnyadike/portfolio/blob/master/countrieswebapp/worldcountries.html" class="button">View Code</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Anyadike Wisdom Chidubem</p>
+    </footer>
+</body>
+</html>

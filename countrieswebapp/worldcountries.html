@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #83677b;
+            margin: 0px;
+        }
+
+        #header{
+            vertical-align: middle;
+            text-align: center;
+            background-color: #321012;
+            padding: 30px;
+            animation: fadeInUp 1s forwards;
+            opacity: 0;
+
+        }
+
+        #head{
+            display: inline;
+            font-size: larger;
+            font-weight: 900;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+
+            
+        }
+
+
+        
+
+
+     #container {
+       
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:  wrap;
+  animation: fadeInUp 1s forwards;
+    opacity: 0;
+     }
+
+
+#container > div {
+    background-color: #64485c;  
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0px 0px 4px black;
+    width: 350px;
+  height: 250px;
+  margin: 10px ;
+  animation: fadeInUp 1s forwards;
+    opacity: 0;
+ 
+}
+
+#container > div:hover {
+   background-color: #83677b ;
+
+}
+
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+  display: block;
+  animation: fadeInUp 1s forwards;
+    opacity: 0;
+}
+
+img {
+    margin-top: 20px;
+  width: 50%;
+  animation: fadeInUp 1s forwards;
+    opacity: 0;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  width: 60%;
+  border-radius: 25px;
+  margin: 30px auto;
+  outline: none;
+  font-size: 18px;
+  animation: fadeInUp 1s forwards;
+    opacity: 0;
+    border: 0.8px;
+    margin-bottom: 0px;
+}
+
+button {
+    vertical-align: middle; 
+    color: whitesmoke;
+    background-color: #2e1114;
+    box-shadow: 0px 0px ;
+    border: none;
+    padding: 7px;
+    border-radius: 25px ;
+}
+button:hover {
+    background-color: #64485c;
+}
+
+
+    p{
+        text-align: center;
+        animation: fadeInUp 1s forwards;
+    opacity: 0;
+    }
+
+
+footer {
+    background-color: #321012;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0; 
+    animation: fadeIn 1s forwards 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav id="header"> 
+        <p id="head">WorldCountries.net</p>
+    </nav>
+
+
+  <input id="termo" type="text"  placeholder="Search Countries by Name.. " >
+  <p> <button id='button1' onclick="changecolor()">Change background</button> <button onclick="resetcolor()"> Reset background</button>
+    
+    
+    <button onclick="resetCountriesOrder()" type="menu" > Sort by Name </button>
+    
+    <button onclick="sortCountriesByPopulation()">Sort by Population</button> </p> 
+  <div id="holder" > <div id="container" > </div> </div>
+
+  
+
+
+    <footer>
+        <p>&copy; 2023 Anyadike Wisdom Chidubem</p>
+    </footer>
+
+
+    
+
+    <script src="worldcountries.js"></script> 
+ <script src="countries.dom.js"> </script> 
+ 
+</body>
+</html>

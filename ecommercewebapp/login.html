@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" type="text/css" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div style=" margin-top: 50px; margin-left :450px; background-color: orange ; height: 500px;">
+   <form>
+
+    <img  src="CnVqqPRtxBhGvcxCh88w3lXiti31601367064821_200x200.png" >
+
+    <p style="font-family: verdana;">Express login via Google and Facebook</p>
+
+    <input type ='text' placeholder="Google"> <input type="text" placeholder="facebook" >
+    <br>
+    <br>
+    <span style="background-color: white;  border-radius: 3px 3px 0 0;  font-family: verdana; "> Log in</span> 
+    <a style="text-decoration: none; color: black;"   href='signup.html' > <span style = "font-family: verdana;"> Sign up </span></a> 
+    <br>
+    <br>
+    
+    <input style="height: 35px; width:200px; border-radius: 4px 4px 0px 0px; margin-bottom: 3px;"    type ='email' placeholder="email" > 
+    <br>
+    <input style=" height: 35px ; width: 200px;  border-radius: 4px 4px 0px 0px;" type ='password' placeholder="password" > 
+    <br>
+    <button id="but" style=" background-color: rgb(47, 47, 47); color: white; width: 208px; height: 50px; border-radius: 3px; "> <a href="index.html"> Log in </a> </button> 
+
+   </form>
+
+</div> 
+<script>
+  let button =  document.querySelector('#but');
+
+
+  button.addEventListener('click' , ()=>{
+    window.location.href ='index.html';
+  })
+
+
+    </script>
+</body>
+</html>
