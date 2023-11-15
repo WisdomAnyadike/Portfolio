@@ -121,7 +121,7 @@ container.appendChild(div);
 
 terminput.addEventListener('input', ()=> {
     
-    filteredcountries = countries_data.filter(country => country.name.toLowerCase().includes(terminput.value.toLowerCase()));
+    filteredcountries = countries_data.filter((country) => country.name.toLowerCase().includes(terminput.value.toLowerCase())   );
   
 
     rendercountries();
